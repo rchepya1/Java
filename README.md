@@ -1,4 +1,6 @@
-# The Algorithms - Java [![Build Status](https://travis-ci.org/TheAlgorithms/Java.svg)](https://travis-ci.org/TheAlgorithms/Java)
+# The Algorithms - Java
+
+NOTE: A [Development](https://github.com/TheAlgorithms/Java/tree/Development) branch is made for this repo where we are trying to migrate the existing project to a Java project structure. You can switch to [Development](https://github.com/TheAlgorithms/Java/tree/Development) branch for contributions. Please refer [this issue](https://github.com/TheAlgorithms/Java/issues/474) for more info.
 
 ### All algorithms implemented in Java (for education)
 
@@ -17,21 +19,22 @@ __Properties__
 * Best case performance    O(n)
 * Average case performance    O(n^2)
 
-###### View the algorithm in [action][bubble-toptal]
+##### View the algorithm in [action][bubble-toptal]
 
 
 
 ### Insertion
 ![alt text][insertion-image]
 
-From [Wikipedia][insertion-wiki]: Insertion sort is a simple sorting algorithm that builds the final sorted array (or list) one item at a time. It is much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort.
+From [Wikipedia][insertion-wiki]: Insertion sort is a simple sorting algorithm that builds the final sorted array (or list) one item at a time. It is much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort. 
+In the figure, each bar represents an element of an array that needs to be sorted. What happens at the first intersection of the top most and second top most bars is to swap these elements, represented by bars, because the second element has a higher precedence than the first element does. By repeating this method, insertion sort completes sorting.
 
 __Properties__
 * Worst case performance    O(n^2)
 * Best case performance    O(n)
 * Average case performance    O(n^2)
 
-###### View the algorithm in [action][insertion-toptal]
+##### View the algorithm in [action][insertion-toptal]
 
 
 ### Merge
@@ -45,7 +48,7 @@ __Properties__
 * Average case performance    O(n log n)
 
 
-###### View the algorithm in [action][merge-toptal]
+##### View the algorithm in [action][merge-toptal]
 
 ### Quick
 ![alt text][quick-image]
@@ -55,9 +58,9 @@ From [Wikipedia][quick-wiki]: Quicksort (sometimes called partition-exchange sor
 __Properties__
 * Worst case performance    O(n^2)
 * Best case performance    O(n log n) or O(n) with three-way partition
-* Average case performance    O(n^2)
+* Average case performance    O(n log n)
 
-###### View the algorithm in [action][quick-toptal]
+##### View the algorithm in [action][quick-toptal]
 
 ### Selection
 ![alt text][selection-image]
@@ -69,7 +72,7 @@ __Properties__
 * Best case performance    O(n^2)
 * Average case performance    O(n^2)
 
-###### View the algorithm in [action][selection-toptal]
+##### View the algorithm in [action][selection-toptal]
 
 ### Shell
 ![alt text][shell-image]
@@ -81,9 +84,9 @@ __Properties__
 * Best case performance O(n log n)
 * Average case performance depends on gap sequence
 
-###### View the algorithm in [action][shell-toptal]
+##### View the algorithm in [action][shell-toptal]
 
-### Time-Compexity Graphs
+### Time-Complexity Graphs
 
 Comparing the complexity of sorting algorithms (Bubble Sort, Insertion Sort, Selection Sort)
 
@@ -116,14 +119,7 @@ __Properties__
 * Average case performance    O(log n)
 * Worst case space complexity    O(1) 
 
-From [Wikipedia][shell-wiki]:  Shellsort is a generalization of insertion sort that allows the exchange of items that are far apart.  The idea is to arrange the list of elements so that, starting anywhere, considering every nth element gives a sorted list.  Such a list is said to be h-sorted.  Equivalently, it can be thought of as h interleaved lists, each individually sorted.
-
-__Properties__
-* Worst case performance O(nlog2 2n)
-* Best case performance O(n log n)
-* Average case performance depends on gap sequence
-
-###### View the algorithm in [action][shell-toptal]
+##### View the algorithm in [action][shell-toptal]
 
 [bubble-toptal]: https://www.toptal.com/developers/sorting-algorithms/bubble-sort
 [bubble-wiki]: https://en.wikipedia.org/wiki/Bubble_sort
@@ -174,20 +170,22 @@ and much more...|                                                    and more...
 ### Data Structures
 Graphs|Heaps|Lists|Queues|
 ------|-----|-----|------|
-[BFS](Data%20Structures/Graphs/BFS.java)|[Empty Heap Exception](Data%20Structures/Heaps/EmptyHeapException.java)|[Circle Linked List](Data%20Structures/Lists/CircleLinkedList.java)|[Generic Array List Queue](Data%20Structures/Queues/GenericArrayListQueue.java)|
-[DFS](Data%20Structures/Graphs/DFS.java)|[Heap](Data%20Structures/Heaps/Heap.java)|[Doubly Linked List](Data%20Structures/Lists/DoublyLinkedList.java)|[Queues](Data%20Structures/Queues/Queues.java)|
-[Graphs](Data%20Structures/Graphs/Graphs.java)|[Heap Element](Data%20Structures/Heaps/HeapElement.java)|[Singly Linked List](Data%20Structures/Lists/SinglyLinkedList.java)|
-[Kruskals Algorithm](Data%20Structures/Graphs/KruskalsAlgorithm.java)|[Max Heap](Data%Structures/Heaps/MaxHeap.java)|
-[Matrix Graphs](Data%20Structures/Graphs/MatrixGraphs.java)|[Min Heap](Data%20Structures/Heaps/MinHeap.java)|
-[PrimMST](Data%20Structures/Graphs/PrimMST.java)|
+[BFS](DataStructures/Graphs/BFS.java)|[Empty Heap Exception](DataStructures/Heaps/EmptyHeapException.java)|[Circle Linked List](DataStructures/Lists/CircleLinkedList.java)|[Generic Array List Queue](DataStructures/Queues/GenericArrayListQueue.java)|
+[DFS](DataStructures/Graphs/DFS.java)|[Heap](DataStructures/Heaps/Heap.java)|[Doubly Linked List](DataStructures/Lists/DoublyLinkedList.java)|[Queues](DataStructures/Queues/Queues.java)|
+[Graphs](DataStructures/Graphs/Graphs.java)|[Heap Element](DataStructures/Heaps/HeapElement.java)|[Singly Linked List](DataStructures/Lists/SinglyLinkedList.java)|
+[Kruskals Algorithm](DataStructures/Graphs/KruskalsAlgorithm.java)|[Max Heap](Data%Structures/Heaps/MaxHeap.java)|
+[CursorLinkedList](DataStructures/Lists/CursorLinkedList.java)|
+[Matrix Graphs](DataStructures/Graphs/MatrixGraphs.java)|[Min Heap](DataStructures/Heaps/MinHeap.java)|
+[PrimMST](DataStructures/Graphs/PrimMST.java)|
 
 Stacks|Trees|
 ------|-----|
-[Node Stack](Data%20Structures/Stacks/NodeStack.java)|[AVL Tree](Data%20Structures/Trees/AVLTree.java)|
-[Stack of Linked List](Data%20Structures/Stacks/StackOfLinkedList.java)|[Binary Tree](Data%20Structures/Trees/BinaryTree.java)|
-[Stacks](Data%20Structures/Stacks/Stacks.java)|And much more...|
+[Node Stack](DataStructures/Stacks/NodeStack.java)|[AVL Tree](DataStructures/Trees/AVLTree.java)|
+[Stack of Linked List](DataStructures/Stacks/StackOfLinkedList.java)|[Binary Tree](DataStructures/Trees/BinaryTree.java)|
+[Array Stack](DataStructures/Stacks/StackArray.java)|And much more...|
+[ArrayList Stack](DataStructures/Stacks/StackArrayList.java)||
 
-* [Bags](Data%20Structures/Bags/Bag.java)
-* [Buffer](Data%20Structures/Buffers/CircularBuffer.java)
-* [HashMap](Data%20Structures/HashMap/HashMap.java)
-* [Matrix](Data%20Structures/Matrix/Matrix.java)
+* [Bags](DataStructures/Bags/Bag.java)
+* [Buffer](DataStructures/Buffers/CircularBuffer.java)
+* [HashMap](DataStructures/HashMap/Hashing/HashMap.java)
+* [Matrix](DataStructures/Matrix/Matrix.java)
